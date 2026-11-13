@@ -1,6 +1,6 @@
 {
   "name": "@local/dsh-spixii-forum",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "description": "带鲸鲸去 spixii.cn 逛论坛的 DSH 插件：自动拉起 BrowserSkill、核对身份、读完整栋楼、看图、回帖，逛完静默关窗。",
@@ -13,7 +13,7 @@
     "forum",
     "spixii"
   ],
-  "license": "MIT",
+  "license": "AGPL-3.0-or-later",
   "engines": {
     "node": ">=18"
   },

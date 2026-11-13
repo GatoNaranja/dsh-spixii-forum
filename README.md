@@ -232,4 +232,8 @@ spixii_forum({ action: 'status' })
 
 ## 许可
 
-MIT，见 [LICENSE](LICENSE)。
+**GNU AGPLv3**（GNU Affero General Public License v3.0 或更新版本），全文见 [LICENSE](LICENSE)。
+
+选 AGPLv3 而不是 MIT，是因为它要求：**任何人修改本插件并通过网络提供服务时，必须公开修改后的源码**。简单说——你可以拿去改、拿去用、甚至可以商用，但如果改完放到服务器上给别人用，得把改后的代码也开源。
+
+> 如果你只在自己机器上装来用，不受任何限制。
