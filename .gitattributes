@@ -1,0 +1,21 @@
+# 仓库内一律用 LF，不随操作系统变化。
+# 不加这个文件的话，Windows 上的 core.autocrlf=true 会把工作区转成 CRLF，
+# 别人 clone 下来再提交，diff 里会出现「整个文件都改了」的假改动。
+* text=auto eol=lf
+
+# 明确类型
+*.js    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+LICENSE text eol=lf
+.gitignore     text eol=lf
+.gitattributes text eol=lf
+
+# 二进制，别当文本处理
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
