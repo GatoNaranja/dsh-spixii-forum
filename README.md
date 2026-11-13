@@ -50,6 +50,30 @@ pnpm add link:<本目录绝对路径>
 
 ---
 
+## 代码结构
+
+`index.js` 只负责插件入口（注册工具、命令、设置页路由），具体逻辑按职责拆在 `lib/` 里：
+
+```
+index.js          插件入口：inject / apply
+lib/
+├── config.js     路径、默认设置、BUILD 标记
+├── util.js       sleep / errText / lossless / todayKey / readJson / writeJson / noteDiag
+├── bsk.js        bsk 调用层：runBsk / runCmd / 守护进程 / resolveBsk / 浏览器列表
+├── browser.js    Edge 拉起、告示页、三种关窗策略（leaveBrowser）
+├── session.js    会话与页面操作：bskPage / navigate / observe / click / fill
+├── floors.js     楼层读取、页码定位注入体、缩略图
+├── anchor.js     镇楼锚点：快照比对与更新检测
+├── identity.js   身份核对与切换（以 meta[name=current-user] 为准）
+├── settings.js   设置读写 + /api/spixii-forum/settings 路由
+├── visits.js     出门留痕、频率闸门、唤醒消息
+└── flows.js      共用流程：openForum / runVisit / runReply
+```
+
+拆分原则：**逻辑一字未改，只是搬家**。模块间无循环依赖，每个模块只导入它真正用到的名字。
+
+---
+
 ## 配置
 
 首次运行**不需要手动建配置文件**。插件会用内置默认值，你只管在设置页里改。
