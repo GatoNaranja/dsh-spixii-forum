@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "鲸鲸逛论坛",
+    "description": "自动拉起 BrowserSkill 守护进程，替鲸鱼娘打开 spixii.cn、确认登录、读评论并发回复；提示词与访问频率可在设置里改。"
+  }
+}

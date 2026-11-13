@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Jingjing Visits the Forum",
+    "description": "Ensures the BrowserSkill daemon, then opens spixii.cn for the agent, verifies the login, reads replies and posts a comment. Prompt and visit frequency are configurable in Settings."
+  }
+}

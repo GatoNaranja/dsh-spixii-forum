@@ -1,0 +1,29 @@
+# 历史备份（本地留着对照，不进仓库）
+.bak/
+
+# 依赖与构建产物
+node_modules/
+dist/
+*.tgz
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 日志与诊断（可能含本地路径）
+*.log
+diag.log
+
+# 本地设置与凭据 —— 绝不入库
+settings.json
+state.json
+Anchor.json
+Temp/
+visits/
+
+# 本地测试产物
+.test/
+trace/
+*.mp4
